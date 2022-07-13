@@ -19,7 +19,7 @@ import (
 
 func main() {
 	out := flag.String("o", "doc.go", "out file")
-	pkg := flag.String("pkg", "github.com/kenshaw/hilink", "go package")
+	pkg := flag.String("pkg", "github.com/jeadie/hilink", "go package")
 	flag.Parse()
 	if err := run(*out, *pkg); err != nil {
 		log.Fatal(err)

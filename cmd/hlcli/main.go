@@ -14,7 +14,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/kenshaw/hilink"
+	"github.com/jeadie/hilink"
 )
 
 func main() {

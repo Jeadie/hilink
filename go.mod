@@ -1,4 +1,4 @@
-module github.com/kenshaw/hilink
+module github.com/jeadie/hilink
 
 go 1.15
 
