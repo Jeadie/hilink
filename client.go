@@ -331,14 +331,14 @@ func (cl *Client) CradleStatusInfo(ctx context.Context) (XMLData, error) {
 
 // CradleMACSet sets the MAC address for the cradle.
 func (cl *Client) CradleMACSet(ctx context.Context, addr string) (bool, error) {
-	return cl.doReqCheckOK(ctx, "api/cradle/current-mac", XMLData{
+	return cl.doReqCheckOK(ctx, "api/cradle/mac", XMLData{
 		"currentmac": addr,
 	})
 }
 
 // CradleMAC retrieves cradle MAC address.
 func (cl *Client) CradleMAC(ctx context.Context) (string, error) {
-	return cl.doReqString(ctx, "api/cradle/current-mac", nil, "currentmac")
+	return cl.doReqString(ctx, "api/cradle/mac", nil, "currentmac")
 }
 
 // AutorunVersion retrieves device autorun version.
